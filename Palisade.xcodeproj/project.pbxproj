@@ -16,6 +16,9 @@
 		1D87C39D29457FE8001E11CF /* PalisadeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D87C39C29457FE8001E11CF /* PalisadeTests.swift */; };
 		1D87C3A729457FE8001E11CF /* PalisadeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D87C3A629457FE8001E11CF /* PalisadeUITests.swift */; };
 		1D87C3A929457FE8001E11CF /* PalisadeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D87C3A829457FE8001E11CF /* PalisadeUITestsLaunchTests.swift */; };
+		1D87C3B729482543001E11CF /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 1D87C3B629482543001E11CF /* FirebaseDatabase */; };
+		1D87C3B929482543001E11CF /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1D87C3B829482543001E11CF /* FirebaseDatabaseSwift */; };
+		1D87C3BB29482612001E11CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D87C3BA29482612001E11CF /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,7 @@
 		1D87C3A229457FE8001E11CF /* PalisadeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PalisadeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D87C3A629457FE8001E11CF /* PalisadeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalisadeUITests.swift; sourceTree = "<group>"; };
 		1D87C3A829457FE8001E11CF /* PalisadeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalisadeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1D87C3BA29482612001E11CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D87C3B929482543001E11CF /* FirebaseDatabaseSwift in Frameworks */,
+				1D87C3B729482543001E11CF /* FirebaseDatabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +108,7 @@
 				1D87C38529457FE5001E11CF /* AppDelegate.swift */,
 				1D87C38729457FE5001E11CF /* SceneDelegate.swift */,
 				1D87C38929457FE5001E11CF /* ViewController.swift */,
+				1D87C3BA29482612001E11CF /* GoogleService-Info.plist */,
 				1D87C38B29457FE5001E11CF /* Main.storyboard */,
 				1D87C38E29457FE7001E11CF /* Assets.xcassets */,
 				1D87C39029457FE7001E11CF /* LaunchScreen.storyboard */,
@@ -143,6 +150,10 @@
 			dependencies = (
 			);
 			name = Palisade;
+			packageProductDependencies = (
+				1D87C3B629482543001E11CF /* FirebaseDatabase */,
+				1D87C3B829482543001E11CF /* FirebaseDatabaseSwift */,
+			);
 			productName = Palisade;
 			productReference = 1D87C38229457FE5001E11CF /* Palisade.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,9 @@
 				Base,
 			);
 			mainGroup = 1D87C37929457FE5001E11CF;
+			packageReferences = (
+				1D87C3B529482543001E11CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 1D87C38329457FE5001E11CF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D87C39229457FE7001E11CF /* LaunchScreen.storyboard in Resources */,
+				1D87C3BB29482612001E11CF /* GoogleService-Info.plist in Resources */,
 				1D87C38F29457FE7001E11CF /* Assets.xcassets in Resources */,
 				1D87C38D29457FE5001E11CF /* Main.storyboard in Resources */,
 			);
@@ -602,6 +617,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1D87C3B529482543001E11CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1D87C3B629482543001E11CF /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D87C3B529482543001E11CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		1D87C3B829482543001E11CF /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D87C3B529482543001E11CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1D87C37A29457FE5001E11CF /* Project object */;
 }
