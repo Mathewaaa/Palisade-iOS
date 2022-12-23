@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1D87C38629457FE5001E11CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D87C38529457FE5001E11CF /* AppDelegate.swift */; };
 		1D87C38829457FE5001E11CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D87C38729457FE5001E11CF /* SceneDelegate.swift */; };
-		1D87C38A29457FE5001E11CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D87C38929457FE5001E11CF /* ViewController.swift */; };
 		1D87C38D29457FE5001E11CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D87C38B29457FE5001E11CF /* Main.storyboard */; };
 		1D87C38F29457FE7001E11CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D87C38E29457FE7001E11CF /* Assets.xcassets */; };
 		1D87C39229457FE7001E11CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D87C39029457FE7001E11CF /* LaunchScreen.storyboard */; };
@@ -19,6 +18,11 @@
 		1D87C3B729482543001E11CF /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 1D87C3B629482543001E11CF /* FirebaseDatabase */; };
 		1D87C3B929482543001E11CF /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1D87C3B829482543001E11CF /* FirebaseDatabaseSwift */; };
 		1D87C3BB29482612001E11CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D87C3BA29482612001E11CF /* GoogleService-Info.plist */; };
+		1DBD2D71294C09BB008F0781 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBD2D70294C09BB008F0781 /* PostViewController.swift */; };
+		1DBD2D73294C0A2F008F0781 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBD2D72294C0A2F008F0781 /* FeedViewController.swift */; };
+		1DBD2D77294FFE15008F0781 /* PostStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DBD2D76294FFE15008F0781 /* PostStoryboard.storyboard */; };
+		1DBD78BE2955308900C6B73B /* FeedStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DBD78BD2955308900C6B73B /* FeedStoryboard.storyboard */; };
+		1DBD78C4295552D000C6B73B /* SinglePost.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DBD78C3295552D000C6B73B /* SinglePost.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +46,6 @@
 		1D87C38229457FE5001E11CF /* Palisade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palisade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D87C38529457FE5001E11CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D87C38729457FE5001E11CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1D87C38929457FE5001E11CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1D87C38C29457FE5001E11CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D87C38E29457FE7001E11CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D87C39129457FE7001E11CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +56,11 @@
 		1D87C3A629457FE8001E11CF /* PalisadeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalisadeUITests.swift; sourceTree = "<group>"; };
 		1D87C3A829457FE8001E11CF /* PalisadeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalisadeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1D87C3BA29482612001E11CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1DBD2D70294C09BB008F0781 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		1DBD2D72294C0A2F008F0781 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		1DBD2D76294FFE15008F0781 /* PostStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostStoryboard.storyboard; sourceTree = "<group>"; };
+		1DBD78BD2955308900C6B73B /* FeedStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedStoryboard.storyboard; sourceTree = "<group>"; };
+		1DBD78C3295552D000C6B73B /* SinglePost.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SinglePost.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,11 +115,15 @@
 			children = (
 				1D87C38529457FE5001E11CF /* AppDelegate.swift */,
 				1D87C38729457FE5001E11CF /* SceneDelegate.swift */,
-				1D87C38929457FE5001E11CF /* ViewController.swift */,
-				1D87C3BA29482612001E11CF /* GoogleService-Info.plist */,
+				1DBD2D70294C09BB008F0781 /* PostViewController.swift */,
+				1DBD2D72294C0A2F008F0781 /* FeedViewController.swift */,
+				1DBD78C3295552D000C6B73B /* SinglePost.xib */,
 				1D87C38B29457FE5001E11CF /* Main.storyboard */,
-				1D87C38E29457FE7001E11CF /* Assets.xcassets */,
+				1DBD2D76294FFE15008F0781 /* PostStoryboard.storyboard */,
+				1DBD78BD2955308900C6B73B /* FeedStoryboard.storyboard */,
 				1D87C39029457FE7001E11CF /* LaunchScreen.storyboard */,
+				1D87C38E29457FE7001E11CF /* Assets.xcassets */,
+				1D87C3BA29482612001E11CF /* GoogleService-Info.plist */,
 				1D87C39329457FE7001E11CF /* Info.plist */,
 			);
 			path = Palisade;
@@ -246,7 +258,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D87C39229457FE7001E11CF /* LaunchScreen.storyboard in Resources */,
+				1DBD2D77294FFE15008F0781 /* PostStoryboard.storyboard in Resources */,
 				1D87C3BB29482612001E11CF /* GoogleService-Info.plist in Resources */,
+				1DBD78BE2955308900C6B73B /* FeedStoryboard.storyboard in Resources */,
+				1DBD78C4295552D000C6B73B /* SinglePost.xib in Resources */,
 				1D87C38F29457FE7001E11CF /* Assets.xcassets in Resources */,
 				1D87C38D29457FE5001E11CF /* Main.storyboard in Resources */,
 			);
@@ -273,8 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D87C38A29457FE5001E11CF /* ViewController.swift in Sources */,
 				1D87C38629457FE5001E11CF /* AppDelegate.swift in Sources */,
+				1DBD2D71294C09BB008F0781 /* PostViewController.swift in Sources */,
+				1DBD2D73294C0A2F008F0781 /* FeedViewController.swift in Sources */,
 				1D87C38829457FE5001E11CF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -5,16 +5,25 @@
 //  Created by Mathew Xie on 12/10/22.
 //
 
+import Firebase
 import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        return true
+        FirebaseApp.configure()
+        UITabBar.appearance().barTintColor = .white
+        UITabBar.appearance().tintColor = .blue
+        
+        let defaults = UserDefaults.standard
+                
+        if !defaults.bool(forKey: "firstLaunch") {
+            defaults.set(true, forKey: "firstLaunch")
+            defaults.set(UUID().uuidString, forKey: "uuid")
+        }
+        return true;
     }
 
     // MARK: UISceneSession Lifecycle
