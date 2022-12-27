@@ -18,11 +18,13 @@
 		1D87C3B729482543001E11CF /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 1D87C3B629482543001E11CF /* FirebaseDatabase */; };
 		1D87C3B929482543001E11CF /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1D87C3B829482543001E11CF /* FirebaseDatabaseSwift */; };
 		1D87C3BB29482612001E11CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D87C3BA29482612001E11CF /* GoogleService-Info.plist */; };
+		1DABB271295B6DAF0074C05D /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DABB26F295B6DAF0074C05D /* PostTableViewCell.swift */; };
+		1DABB272295B6DAF0074C05D /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DABB270295B6DAF0074C05D /* PostTableViewCell.xib */; };
+		1DABB274295B71790074C05D /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DABB273295B71790074C05D /* PostModel.swift */; };
+		1DABB276295B73860074C05D /* FeedStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DABB275295B73860074C05D /* FeedStoryboard.storyboard */; };
 		1DBD2D71294C09BB008F0781 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBD2D70294C09BB008F0781 /* PostViewController.swift */; };
 		1DBD2D73294C0A2F008F0781 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBD2D72294C0A2F008F0781 /* FeedViewController.swift */; };
 		1DBD2D77294FFE15008F0781 /* PostStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DBD2D76294FFE15008F0781 /* PostStoryboard.storyboard */; };
-		1DBD78BE2955308900C6B73B /* FeedStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DBD78BD2955308900C6B73B /* FeedStoryboard.storyboard */; };
-		1DBD78C4295552D000C6B73B /* SinglePost.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DBD78C3295552D000C6B73B /* SinglePost.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,11 +58,13 @@
 		1D87C3A629457FE8001E11CF /* PalisadeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalisadeUITests.swift; sourceTree = "<group>"; };
 		1D87C3A829457FE8001E11CF /* PalisadeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalisadeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1D87C3BA29482612001E11CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1DABB26F295B6DAF0074C05D /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		1DABB270295B6DAF0074C05D /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		1DABB273295B71790074C05D /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		1DABB275295B73860074C05D /* FeedStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = FeedStoryboard.storyboard; path = ../../../.Trash/FeedStoryboard.storyboard; sourceTree = "<group>"; };
 		1DBD2D70294C09BB008F0781 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		1DBD2D72294C0A2F008F0781 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		1DBD2D76294FFE15008F0781 /* PostStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostStoryboard.storyboard; sourceTree = "<group>"; };
-		1DBD78BD2955308900C6B73B /* FeedStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedStoryboard.storyboard; sourceTree = "<group>"; };
-		1DBD78C3295552D000C6B73B /* SinglePost.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SinglePost.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,10 +121,12 @@
 				1D87C38729457FE5001E11CF /* SceneDelegate.swift */,
 				1DBD2D70294C09BB008F0781 /* PostViewController.swift */,
 				1DBD2D72294C0A2F008F0781 /* FeedViewController.swift */,
-				1DBD78C3295552D000C6B73B /* SinglePost.xib */,
+				1DABB26F295B6DAF0074C05D /* PostTableViewCell.swift */,
+				1DABB273295B71790074C05D /* PostModel.swift */,
+				1DABB270295B6DAF0074C05D /* PostTableViewCell.xib */,
 				1D87C38B29457FE5001E11CF /* Main.storyboard */,
 				1DBD2D76294FFE15008F0781 /* PostStoryboard.storyboard */,
-				1DBD78BD2955308900C6B73B /* FeedStoryboard.storyboard */,
+				1DABB275295B73860074C05D /* FeedStoryboard.storyboard */,
 				1D87C39029457FE7001E11CF /* LaunchScreen.storyboard */,
 				1D87C38E29457FE7001E11CF /* Assets.xcassets */,
 				1D87C3BA29482612001E11CF /* GoogleService-Info.plist */,
@@ -260,10 +266,10 @@
 				1D87C39229457FE7001E11CF /* LaunchScreen.storyboard in Resources */,
 				1DBD2D77294FFE15008F0781 /* PostStoryboard.storyboard in Resources */,
 				1D87C3BB29482612001E11CF /* GoogleService-Info.plist in Resources */,
-				1DBD78BE2955308900C6B73B /* FeedStoryboard.storyboard in Resources */,
-				1DBD78C4295552D000C6B73B /* SinglePost.xib in Resources */,
 				1D87C38F29457FE7001E11CF /* Assets.xcassets in Resources */,
+				1DABB276295B73860074C05D /* FeedStoryboard.storyboard in Resources */,
 				1D87C38D29457FE5001E11CF /* Main.storyboard in Resources */,
+				1DABB272295B6DAF0074C05D /* PostTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +296,8 @@
 			files = (
 				1D87C38629457FE5001E11CF /* AppDelegate.swift in Sources */,
 				1DBD2D71294C09BB008F0781 /* PostViewController.swift in Sources */,
+				1DABB271295B6DAF0074C05D /* PostTableViewCell.swift in Sources */,
+				1DABB274295B71790074C05D /* PostModel.swift in Sources */,
 				1DBD2D73294C0A2F008F0781 /* FeedViewController.swift in Sources */,
 				1D87C38829457FE5001E11CF /* SceneDelegate.swift in Sources */,
 			);

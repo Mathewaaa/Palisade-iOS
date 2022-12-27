@@ -8,7 +8,11 @@
 import UIKit
 
 class PostTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var timeStamp: UILabel!
+    @IBOutlet weak var viewReplies: UIButton!
+    @IBOutlet weak var textField: UITextView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -18,6 +22,11 @@ class PostTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func set(post: Post) {
+        timeStamp.text = post.timestamp
+        textField.text = post.message
     }
     
 }

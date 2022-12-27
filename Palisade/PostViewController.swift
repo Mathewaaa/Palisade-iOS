@@ -8,13 +8,15 @@
 import FirebaseDatabase
 import UIKit
 
-class PostViewController: UIViewController {
+class PostViewController: UIViewController, UITextViewDelegate {
 
+    private let MAX_MESSAGE_CHAR = 150 // constant, max # of letters allowed in a message
+    
     private let database = Database.database().reference()
     private let uuid = UserDefaults.standard.string(forKey: "uuid")!
     private var category = "sports" // sports is default
     
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var textField: UITextView!
     @IBOutlet weak var categoryButton: UIButton!
     @IBOutlet weak var postButton: UIButton!
     
@@ -23,11 +25,23 @@ class PostViewController: UIViewController {
         setupCategoryMenu()
         postButton.isEnabled = false
         postButton.addTarget(self, action: #selector(createPost), for: .touchDown)
-        textField.addTarget(self, action: #selector(updateButtonVisibility), for: .editingChanged)
+        textField.delegate = self
+
+        textField.text = "I..." // placeholder
+        textField.textColor = UIColor.lightGray
+
     }
     
-    @objc private func updateButtonVisibility() {
-        if !(textField.text ?? "").trimmingCharacters(in: .whitespaces).isEmpty {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.textColor == UIColor.lightGray {
+            textView.text = nil
+            textView.textColor = UIColor.black
+        }
+    }
+    
+    
+    func textViewDidChange(_ textField: UITextView) {
+        if (!(textField.text ?? "").trimmingCharacters(in: .whitespaces).isEmpty) || ((textField.text ?? "").count <= MAX_MESSAGE_CHAR) {
             postButton.isEnabled = true
         }
         else {
@@ -45,7 +59,8 @@ class PostViewController: UIViewController {
         
         
         // after user presses button, reset text field
-        textField.text = ""
+        textField.text = "I..." // placeholder
+        textField.textColor = UIColor.lightGray
     }
     
     private func setupCategoryMenu() {
